@@ -1,0 +1,23 @@
+[project]
+name = "fastapi-doc2docx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["python-multipart", "fastapi[standard]", "uvicorn[standard]", "aiofiles"]
+
+[tool.ruff]
+line-length = 120
+# Flake8 - E, F
+# pycodestyle - W
+# flake8-builtins - A
+# Pylint - PLC, PLE, PLW
+# isort - I
+select = ['E', 'F', 'W', 'A', 'PLC', 'PLE', 'PLW', 'I']
+
+[tool.ruff.format]
+# Like Black
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
