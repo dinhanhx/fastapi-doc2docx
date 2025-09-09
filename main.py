@@ -59,7 +59,7 @@ async def convert(file: UploadFile):
     if original_file_extension.lower() != ".doc":
         return JSONResponse(
             status_code=400,
-            content={"error": "Invalid file type. Only .doc and .docx are allowed."},
+            content={"error": "Invalid file type. Only .doc files are allowed."},
         )
 
     file_uuid = str(uuid4())
