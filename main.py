@@ -138,7 +138,7 @@ async def docx2pdf(file: UploadFile):
     # Convert the file using docx2pdf cli
     try:
         subprocess.run(
-            ["docx2pdf", str(file_input), str(file_output)],
+            ["uvx", "docx2pdf", "--keep-active", str(file_input), str(file_output)],
             check=True,
             timeout=int(os.getenv("TIMEOUT", "300")),
         )

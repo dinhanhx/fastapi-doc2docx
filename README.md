@@ -18,6 +18,7 @@ All commands executed in wherever this repos is cloned to.
 ```bash
 uv python pin 3.12
 uv python install 3.12
+uv tool install docx2pdf
 ```
 
 Recommendation: use the latest patch of 3.12 for security fixes.
